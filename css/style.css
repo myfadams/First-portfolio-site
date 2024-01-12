@@ -1,0 +1,117 @@
+body{
+    font-family: "Lato", sans-serif;
+    
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #7FC7D9, #DCF2F1,#7FC7D9);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#intro{
+
+}
+/* #skills{
+    background-color: #DCF2F1;
+} */
+.intro-div{
+    background: #7FC7D9;
+}
+h1{
+    color: #0F1035;
+}
+#intro p{
+    color: #365486;
+}
+
+.border{
+    border-color: #7FC7D9 !important;
+}
+.list-group{
+    @media (max-width:991px) {
+        width: 90%;
+        flex-shrink: 0;
+        
+    }
+}
+.grid-con{
+    display: grid;
+    padding: 5rem 0;
+    grid-template-columns: 70% ;
+    gap: 2rem;
+    @media (min-width:992px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width:991px) {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+
+    }
+}
+h5{
+    color: #0F1035;
+}
+.skill-heading{
+    background-color: #7FC7D9 !important;
+    border-color: #7FC7D9 !important;
+    color: #0F1035 !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.card-button{
+    background-color: #7FC7D9;
+    border-color: #7FC7D9;
+    color: #0F1035;
+}
+.bt-text{
+    
+    color: #0F1035 !important;
+}
+.projects h2{
+    color: #0F1035;
+    font-weight: 700;
+}
+.projects p{
+    color: #365486 !important;
+}
+span{
+     color: #365486;
+}
+footer li{
+    color: #365486 !important;
+}
+.grid-con2{
+    display: grid;
+    padding: 5rem 0;
+    grid-template-columns: 70%;
+    gap: 2rem;
+
+    @media (min-width:768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width:767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+
+    }
+}
